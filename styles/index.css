@@ -30,3 +30,60 @@ p {
     top: 50%;
     transform: translateY(-50%);
 }
+
+nav {
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  height: 58px;
+}
+
+.nav-links-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links-right {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #262626;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .nav-links-left,
+  .logo-container,
+  .nav-links-right {
+    margin-bottom: 1rem;
+  }
+
+  .logo {
+    margin: 0;
+  }
+}
