@@ -32,7 +32,7 @@ p {
 }
 
 nav {
-  background-color: #ddd;
+  font-family: Sogoe, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,8 +62,7 @@ nav {
 }
 
 .nav-link {
-  color: #262626;
-  font-weight: 700;
+  color: #333;
   text-decoration: none;
   margin: 0 0.5rem;
 }
@@ -87,8 +86,3 @@ nav {
     margin: 0;
   }
 }
-
-nav {
-    font-family: Sogoe, sans-serif;
-}
-
