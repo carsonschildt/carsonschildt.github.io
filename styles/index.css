@@ -103,14 +103,14 @@ nav {
   background-color: F2F2F2;
 }
 
-.newsletter h2 {
-  font-size: 24px;
-  font-weight: bold;
+.newsletter h1 {
+  font-family: 'Rubik';
+  font-weight: 500;
   margin-bottom: 10px;
 }
 
 .newsletter p {
-  font-size: 16px;
+  font-size: 32px;
   margin-bottom: 20px;
   color: #666;
 }
