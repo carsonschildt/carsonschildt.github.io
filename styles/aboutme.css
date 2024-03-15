@@ -1,0 +1,79 @@
+body {
+    margin: 30px 70px 0;
+}
+
+.hompage_image {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Rubik';
+    font-weight: 500;
+    color: #262626;
+    font-size: 40px;
+}
+
+p {
+    font-family: 'Segoe UI', sans-serif;
+    color: #262626;
+}
+
+nav {
+  font-family: 'Rubik';
+  font-size: 25px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  height: 58px;
+}
+
+.nav-links-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links-right {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+  height: 140px;
+  width: 140px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .nav-links-left,
+  .logo-container,
+  .nav-links-right {
+    margin-bottom: 1rem;
+  }
+
+  .logo {
+    margin: 0;
+  }
+}
