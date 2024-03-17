@@ -52,6 +52,43 @@
     <input type="email" placeholder="Please enter your email">
     <br>
     <button><em>Send It!<em></button>
+
+    <div class="newsletter">
+    <p>Receive monthly updates regarding new projects and other cool stuff from me.</p>
+    <input type="email" id="emailInput" placeholder="Please enter your email">
+    <br>
+    <button onclick="subscribeToNewsletter()"><em>Send It!<em></button>
+</div>
+
+<script>
+// JavaScript function to collect the user's email address and send it to a server-side script
+function subscribeToNewsletter() {
+  // Get the user's email address from the input box
+  const email = document.getElementById("emailInput").value;
+
+  // Send a POST request to the server-side script with the user's email address
+  fetch("/subscribe.php", {
+    method: "POST",
+    body: JSON.stringify({ email }),
+    headers: { "Content-Type": "application/json" },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      // Handle the response from the server-side script
+      if (data.success) {
+        alert("Thank you for subscribing to our newsletter!");
+      } else {
+        alert("Oops, something went wrong. Please try again later.");
+      }
+    })
+    .catch((error) => {
+      // Handle any errors that occur during the request
+      console.error(error);
+      alert("Oops, something went wrong. Please try again later.");
+    });
+}
+</script>
+        
     </div>
         <br>
         <div align="center">
